@@ -1,0 +1,14 @@
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:800px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
