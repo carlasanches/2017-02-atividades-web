@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de alunos(as) CSS</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+	<body>
+		<form action="validacao.html" method="post">
+			
+			<label for="nome">Nome</label>
+			<input type="text" name="nome"><br><br>
+
+			<label for="rua">Rua</label>
+			<input type="text" name="rua"><br><br>
+
+			<label for="numero">Numero</label>
+			<input type="text" name="numero"><br><br>
+
+			<label for="bairro">Bairro</label>
+			<input type="text" name="bairro"><br><br>
+
+			<label for="complemento">Complemento</label>
+			<input type="text" name="complemento"><br><br>
+
+			<div id="ListaCidades">
+			<select name="cidade">  <!-- uma lista com select aparece de maneira compacta -->
+				<option value="0">Selecione</option>
+				<option value="1">João Monlevade</option>
+				<option value="2">Itabira</option>
+				<option value="3">Belo Horizonte</option>
+				<option value="4">Itaúna</option>
+				<option value="5">Alvinópolis</option> <!--pegar opções da sala -->
+			</select>
+
+			</div><br>
+
+			<div id="ListaEstados">
+			<select name="cidade">  <!-- uma lista com select aparece de maneira compacta -->
+				<option value="0">Selecione</option>
+				<option value="1">Minas Gerais</option>
+				<option value="2">São Paulo</option>
+				<option value="3">Rio de Janeiro</option>
+				<option value="4">Espirito Santo</option>
+				<option value="5">Rio Grande do Sul</option> <!--pegar opções da sala -->
+			</select>
+
+			</div><br>
+
+			<label for="cpf">CPF</label>
+			<input type="text" name="cpf">
+
+			<label for="rg">RG</label>
+			<input type="text" name="rg">
+
+			<label for="telefone1">Telefone 1</label>
+			<input type="text" name="telefone1">
+
+			<label for="telefone2">Telefone 2</label>
+			<input type="text" name="telefone2"><br><br>
+
+			<input type="radio" name="genero" value="F">Feminino<br>
+			<input type="radio" name="genero" value="M">Masculino<br>
+			<input type="radio" name="genero" value="N">Não binário<br><br>
+
+			<input type="checkbox" name="whatsapp">WhatsApp<br>
+			<input type="checkbox" name="telegram">Telegram<br><br>
+
+			<!-- áreas de interesse -->
+
+			<label for="email">Email</label>
+			<input type="text" name="email">
+
+			<label for="confirmaemail">Confirmação de Email</label>
+			<input type="text" name="confirmaemail"><br><br>
+
+			<label for="senha">Senha</label>
+			<input type="text" name="senha">
+
+			<label for="confirmasenha">Confirmação de Senha</label>
+			<input type="text" name="confirmasenha"><br><br>
+
+			<input type="submit" value="Cadastrar">
+			<input type="reset" value="Limpar"><br><br>
+
+		</form>
+
+		<a href="menu-principal.html">Voltar</a>
+
+	</body>
+</html>
