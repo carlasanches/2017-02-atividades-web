@@ -12,3 +12,19 @@ html, body {height:100%;}
     width:100%;
     text-align: center;
 }
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #A52A2A; /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #FA8072; /* Dark grey background on mouse-over */
+}
