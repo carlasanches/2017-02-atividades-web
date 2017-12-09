@@ -47,8 +47,68 @@
 				document.dados.resultado.value = result;
 				document.dados.valorPesoIdeal.value = pesoIdeal1 + " a " + pesoIdeal2;
 
-			}
+				if(result < 18.5){
+					/*desativando outras possíveis mensagens*/
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
 
+					document.getElementById("alertaResAb").style.display = "Block";
+				}
+				else if(result >= 18.5 && result <= 24.9){
+
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResNorm").style.display = "Block";
+				}
+				else if(result >= 25 && result <= 29.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResExc").style.display = "Block";
+				}
+				else if(result >= 30 && result <= 34.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResObI").style.display = "Block";
+				}
+				else if(result >= 35 && result <= 39.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResObII").style.display = "Block";
+				}
+				else if(result >= 40){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+
+					document.getElementById("alertaResObIII").style.display = "Block";
+				}
+
+			}
 			
 
 		</script>
@@ -90,6 +150,30 @@
 
 					<label for="resultado">Resultado</label>
 					<input type="text" name="resultado" disabled="disabled" class="form-control"><br>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResAb">
+						O seu IMC foi classificado abaixo do peso normal.
+					</div>
+
+					<div class="alert alert-info" style="display: none;" id="alertaResNorm">
+						O seu IMC foi classificado no peso normal.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResExc">
+						O seu IMC foi classificado como excesso de peso.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObI">
+						O seu IMC foi classificado como obesidade classe I.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObII">
+						O seu IMC foi classificado como obesidade classe II.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObIII">
+						O seu IMC foi classificado como obesidade clase III.
+					</div>
 
 				</div>
 
