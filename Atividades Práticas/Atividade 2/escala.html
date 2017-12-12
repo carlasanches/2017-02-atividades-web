@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Escala Richter</title>
+
+		<link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+
+		<script type="text/javascript">
+			
+			function calcularMagnitude(){
+
+				var amplitude = parseFloat(document.dados.valorAmp.value);
+				var deltat = parseFloat(document.dados.valorT.value);
+				var magnitude = 
+			}
+
+		</script>
+
+	</head>
+	<body>
+
+		<div class="container">
+			
+			<form name="dados">
+				
+				<label for="valorAmp">Amplitude</label>
+				<input type="text" name="valorAmp" class="form-control"><br>
+
+				<label for="valorT">(delta)t</label>
+				<input type="text" name="valorT" class="form-control"><br>
+
+				<label for="valorMag">Magnitude</label>
+				<input type="text" name="valorMag" class="form-control"><br>
+
+				<button type="button" onclick="calcularMagnitude()">Calcular</button>
+
+			</form>
+
+		</div>
+
+	</body>
+</html>
