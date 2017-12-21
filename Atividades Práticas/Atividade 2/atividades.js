@@ -367,4 +367,33 @@ $(document).ready(function(){
 		$("#alerta14").hide();
 		$("#alerta15").hide();
 	});
+
+	$("button[name='triangulo']").click(function(){
+
+		$("button[name='trianguloB']").click(function(){
+
+			window.alert("Correto!")
+
+		});
+
+		$("button[name='quadradoB']").click(function(){
+
+			window.alert("Errado!")
+
+		});
+
+		$("button[name='circuloB']").click(function(){
+
+			window.alert("Errado!")
+
+		});
+
+		$("button[name='retanguloB']").click(function(){
+
+			window.alert("Errado!")
+
+		});
+
+
+	});
 });
