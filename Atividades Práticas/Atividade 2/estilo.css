@@ -41,6 +41,10 @@ div.body-content{
 	height: 250px;
 }
 
+.imagem-p{
+	width: 150px;
+}
+
 .borda{
 	border: 1px solid;
 	border-radius: 10px;
