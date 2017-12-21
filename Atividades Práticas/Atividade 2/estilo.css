@@ -26,8 +26,18 @@ div.body-content{
 	left: 0;
 }
 
-.imagem{
+.imagem-quad{
 	width: 250px;
+	height: 250px;
+}
+
+.imagem-vert{
+	width: 250px;
+	height: 300px
+}
+
+.imagem-horz{
+	width: 325px;
 	height: 250px;
 }
 
