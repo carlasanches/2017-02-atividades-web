@@ -372,28 +372,111 @@ $(document).ready(function(){
 
 		$("button[name='trianguloB']").click(function(){
 
-			window.alert("Correto!")
+			window.alert("Parabéns! Você acertou!!!");
 
 		});
 
 		$("button[name='quadradoB']").click(function(){
 
-			window.alert("Errado!")
+			window.alert("Que pena :( você errou... Tente outra vez!");
 
 		});
 
 		$("button[name='circuloB']").click(function(){
 
-			window.alert("Errado!")
+			window.alert("Que pena :( você errou... Tente outra vez!");
 
 		});
 
 		$("button[name='retanguloB']").click(function(){
 
-			window.alert("Errado!")
+			window.alert("Que pena :( você errou... Tente outra vez!");
 
 		});
 
+	});
+
+	$("button[name='quadrado']").click(function(){
+
+		$("button[name='trianguloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='quadradoB']").click(function(){
+
+			window.alert("Parabéns! Você acertou!!!");
+
+		});
+
+		$("button[name='circuloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='retanguloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+	});
+
+	$("button[name='circulo']").click(function(){
+
+		$("button[name='trianguloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='quadradoB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='circuloB']").click(function(){
+
+			window.alert("Parabéns! Você acertou!!!");
+
+		});
+
+		$("button[name='retanguloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+	});
+
+	$("button[name='retangulo']").click(function(){
+
+		$("button[name='trianguloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='quadradoB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='circuloB']").click(function(){
+
+			window.alert("Que pena :( você errou... Tente outra vez!");
+
+		});
+
+		$("button[name='retanguloB']").click(function(){
+
+			window.alert("Parabéns! Você acertou!!!");
+
+		});
 
 	});
 });
