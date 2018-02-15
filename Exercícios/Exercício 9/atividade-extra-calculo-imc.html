@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculo de IMC</title>
+
+		<link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+
+		<script type="text/javascript">
+			
+			function calcularIMC(){
+
+				var peso = parseFloat(document.dados.valorPeso.value);
+				var altura = parseFloat(document.dados.valorAltura.value);				
+
+				if(document.dados.valorPeso.value.length == 0 || isNaN(peso)){
+
+					document.getElementById("grupoPeso").classList.add("has-error");
+					document.getElementById("alertaPeso").style.display = "Block";
+
+					document.dados.valorPeso.value = "";
+					document.dados.valorPeso.focus();
+					return;
+				}
+
+				document.getElementById("grupoPeso").classList.remove("has-error");
+				document.getElementById("alertaPeso").style.display = "none";
+				
+				if(document.dados.valorAltura.value.length == 0 || isNaN(altura)){
+
+					document.getElementById("grupoAltura").classList.add("has-error");
+					document.getElementById("alertaAltura").style.display = "Block";
+					
+					document.dados.valorAltura.value = "";
+					document.dados.valorAltura.focus();
+					return;
+				}
+
+				document.getElementById("grupoAltura").classList.remove("has-error");
+				document.getElementById("alertaAltura").style.display = "none";
+
+
+				var result = peso/(altura*altura);
+
+				var pesoIdeal1 = 18.5 * (altura*altura);
+				var pesoIdeal2 = 24.9 * (altura*altura);
+
+				document.dados.resultado.value = result;
+				document.dados.valorPesoIdeal.value = pesoIdeal1 + " a " + pesoIdeal2;
+
+				if(result < 18.5){
+					/*desativando outras possíveis mensagens*/
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResAb").style.display = "Block";
+				}
+				else if(result >= 18.5 && result <= 24.9){
+
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResNorm").style.display = "Block";
+				}
+				else if(result >= 25 && result <= 29.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResExc").style.display = "Block";
+				}
+				else if(result >= 30 && result <= 34.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResObI").style.display = "Block";
+				}
+				else if(result >= 35 && result <= 39.9){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+					document.getElementById("alertaResObIII").style.display = "none";
+
+					document.getElementById("alertaResObII").style.display = "Block";
+				}
+				else if(result >= 40){
+
+					document.getElementById("alertaResNorm").style.display = "none";
+					document.getElementById("alertaResExc").style.display = "none";
+					document.getElementById("alertaResObI").style.display = "none";
+					document.getElementById("alertaResObII").style.display = "none";
+					document.getElementById("alertaResAb").style.display = "none";
+
+					document.getElementById("alertaResObIII").style.display = "Block";
+				}
+
+			}
+			
+
+		</script>
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="jumbotron text-center">
+				<h2>Cálculo de IMC</h2>
+			</div>
+
+			<form name="dados">
+
+				<div id="grupoPeso" class="form-group">
+
+					<label for="valorPeso">Peso</label>
+					<input type="text" name="valorPeso" class="form-control"><br>
+
+					<div class="alert alert-danger" style="display: none;" id="alertaPeso">
+						Informe o valor do peso corretamente.						
+					</div>
+					
+				</div>
+
+				<div id="grupoAltura" class="form-group">
+
+					<label for="valorAltura">Altura</label>
+					<input type="text" name="valorAltura" class="form-control"><br>
+
+					<div class="alert alert-danger" style="display: none;" id="alertaAltura">
+						Informe o valor da altura corretamente.
+					</div>
+
+				</div>
+
+				<div id="grupoRes" class="form-group">
+
+					<label for="resultado">Resultado</label>
+					<input type="text" name="resultado" disabled="disabled" class="form-control"><br>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResAb">
+						O seu IMC foi classificado abaixo do peso normal.
+					</div>
+
+					<div class="alert alert-info" style="display: none;" id="alertaResNorm">
+						O seu IMC foi classificado no peso normal.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResExc">
+						O seu IMC foi classificado como excesso de peso.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObI">
+						O seu IMC foi classificado como obesidade classe I.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObII">
+						O seu IMC foi classificado como obesidade classe II.
+					</div>
+
+					<div class="alert alert-warning" style="display: none;" id="alertaResObIII">
+						O seu IMC foi classificado como obesidade clase III.
+					</div>
+
+				</div>
+
+
+				<div id="grupoPesoIdeal" class="form-group">
+					
+					<label for="valorPesoIdeal">Peso Ideal</label>
+					<input type="text" name="valorPesoIdeal" disabled="disabled" class="form-control"><br>
+
+				</div>		
+
+				
+				<button type="button" class="btn btn-primary" onclick="calcularIMC()">Calcular</button>
+				<button type="reset" class="btn btn-primary" onclick="calcularIMC()">Limpar</button>
+				
+			</form>
+			
+		</div>
+		
+
+	</body>
+</html>
