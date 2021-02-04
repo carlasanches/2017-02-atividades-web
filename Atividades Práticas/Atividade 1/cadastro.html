@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CADASTRO</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+
+		<img src="./ufoplogo.jpg" alt="Logo da UFOP">
+
+		<div class="geral">
+			
+			<form action="sucessoCadastro.html" method="post">
+			
+				<label for="matricula">Matrícula</label>
+				<input type="text" name="matricula"><br><br>
+
+				<label for="nome">Nome</label>
+				<input type="text" name="nome"><br><br>
+
+				<label for="rua">Rua</label>
+				<input type="text" name="rua"><br><br>
+
+				<label for="numero">Número</label>
+				<input type="text" name="numero"><br><br>
+
+				<label for="complemento">Complemento</label>
+				<input type="text" name="nome"><br><br>
+				
+				<div id="ListaCidades"> Cidade
+				<select name="cidade"> 
+					<option value="0">Selecione</option>
+					<option value="1">Alvinópolis</option>
+					<option value="2">Barão de Cocais</option>
+					<option value="3">Bela Vista de Minas</option>
+					<option value="4">Ipatinga</option>
+					<option value="5">Itabira</option>
+					<option value="6">Itaúna</option>
+					<option value="7">João Monlevade</option>
+					<option value="8">Santa Bárbara</option>	
+					<option value="9">Outra</option>			
+				</select>
+
+				</div><br>
+				
+				<div id="ListaEstados"> Estado
+				<select name="cidade"> 
+					<option value="0">Selecione</option>
+					<option value="1">Minas Gerais</option>
+					<option value="2">São Paulo</option>
+					<option value="3">Rio de Janeiro</option>
+					<option value="4">Espirito Santo</option>
+					<option value="5">Rio Grande do Sul</option>
+				</select>
+
+				</div><br>
+
+				<label for="sexo">Sexo</label><br>
+				<input type="radio" name="sexo" value="F">Feminino<br>
+				<input type="radio" name="sexo" value="M">Masculino<br>
+				<input type="radio" name="sexo" value="N">Não binário<br><br>
+
+				<label for="rg">RG</label>
+				<input type="text" name="rg"><br><br>
+
+				<label for="cpf">CPF</label>
+				<input type="text" name="cpf"><br><br>
+				
+				<div id="ListaTiposSanguineos"> Tipo Sanguíneo
+				<select name="tiposanguineo"> 
+					<option value="0">Selecione</option>
+					<option value="1">O</option>
+					<option value="2">A</option>
+					<option value="3">B</option>
+					<option value="4">AB</option>
+				</select>
+
+				</div><br>
+
+				<label for="fatorRH">Fator RH</label><br>
+				<input type="radio" name="fatorRH" value="P">Positivo<br>
+				<input type="radio" name="fatorRH" value="N">Negativo<br><br>
+
+				<label for="telefone">Telefone</label>
+				<input type="text" name="telefone"><br><br>
+
+				<label for="celular">Celular</label>
+				<input type="text" name="celular"><br><br>
+
+				<label for="email">E-mail</label>
+				<input type="text" name="email"><br><br>
+
+				<label for="senha">Senha</label>
+				<input type="password" name="senha"><br><br>
+
+				<label for="confirmacao">Confirmação</label>
+				<input type="password" name="confirmacao"><br><br>
+
+				<label for="acessos">Acessos</label><br>
+				<input type="checkbox" name="biblioteca">Biblioteca<br>
+				<input type="checkbox" name="restaurante">Restaurante<br>
+				<input type="checkbox" name="clube">Clube<br>
+				<input type="checkbox" name="campo">Campo<br><br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar"><br><br>
+
+			</form>
+
+			<a href="index.html">Voltar</a><br><br><br>
+
+			<footer class="footer">
+				Universidade Federal de Ouro Preto - Carla Sanches Nere dos Santos - 15.1.8349 - carlasanches8@gmail.com
+			</footer>	
+
+		</div>	
+
+
+
+	</body>
+</html>

@@ -1,0 +1,35 @@
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:800px;
+}
+
+.center-form{
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
+
+input[type=text]{
+	width: 500px;
+	border: 1px solid #1E90FF;
+	background: #E0FFFF;
+}
+
+textarea{
+	overflow: auto;
+	width: 500px;
+	height: 100px;
+	border: 1px solid #1E90FF;
+	background: #E0FFFF;
+}

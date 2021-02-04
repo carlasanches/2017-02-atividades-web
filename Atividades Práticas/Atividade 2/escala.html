@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Escala Richter</title>
+
+		<link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+
+		<script src="../../jquery-3.2.1.js"></script>
+		<script src="funcoes.js"></script>
+				
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="jumbotron text-center">
+				<h2>Cálculo de Magnitude - Escala Richter</h2>
+			</div>
+			
+			<form name="dados">
+
+				<div id="grupoAmp" class="form-group">
+
+					<label for="valorAmp">Amplitude</label>
+					<input type="text" name="valorAmp" class="form-control"><br>
+
+					<div class="alert alert-danger" style="display: none;" id="alertaAmp">
+						Informe o valor da amplitude corretamente.
+					</div>
+				</div>
+				
+				<div id="grupoT" class="form-group">
+
+					<label for="valorT">Δt*</label>
+					<input type="text" name="valorT" class="form-control"><br>
+
+					<div class="alert alert-danger" style="display: none;" id="alertaT">
+						Informe o valor do Δt corretamente.
+					</div>
+				</div>
+
+				<label for="valorMag">Magnitude</label>
+				<input type="text" name="valorMag" class="form-control" disabled="disabled"><br>
+				
+
+				<div class="alert alert-info" style="display: none;" id="alertaMag1">
+					O efeito nessa magnitude geralmente não é sentido, mas é gravado.
+				</div>
+
+				<div class="alert alert-info" style="display: none;" id="alertaMag2">
+					O efeito nessa magnitude às vezes é sentido, mas raramente causa danos.
+				</div>
+
+				<div class="alert alert-warning" style="display: none;" id="alertaMag3">
+					O efeito nessa magnitude no máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas.
+				</div>
+
+				<div class="alert alert-warning" style="display: none;" id="alertaMag4">
+					O efeito nessa magnitude pode ser destrutivo em áreas em torno de 100km do epicentro.
+				</div>
+
+				<div class="alert alert-danger" style="display: none;" id="alertaMag5">
+					Grande terremoto. Pode causar sérios danos numa grande faixa.
+				</div>
+
+				<div class="alert alert-danger" style="display: none;" id="alertaMag6">
+					Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilõmetros.
+				</div>
+
+				<button type="button" class="btn btn-primary" name="calcularMagnitude">Calcular</button>
+
+			</form>
+
+			<footer class="footer">
+				<h5>*Δt é o intervalo de tempo em segundos entre a onda superficial e a onda de pressão máxima</h5>
+			</footer>
+
+		</div>
+
+	</body>
+</html>

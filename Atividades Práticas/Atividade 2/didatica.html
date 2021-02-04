@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Atividade didática para crianças</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="../../Bootstrap/css/bootstrap.css">
+
+		<script src="../../jquery-3.2.1.js"></script>
+		<script src="atividades.js"></script>
+	</head>
+	<body>
+
+		<div class="container geral" style="background-color: white;">
+			<div class="jumbotron jumbotron-custom text-center">
+				<h1>Brincando de Figuras</h1>
+			</div>
+
+			<form name="atividades">
+
+				<div style="text-align: center;">
+					<h2>1. Clique na palavra que <b>não</b> pertence ao seu grupo:</h2>
+
+					<div class="borda">
+						<h3>Grupo 1:</h3>
+					
+					
+						<div class="row">
+
+							<div class="col-md-6" id="central">
+								<img src="./img/arroz.png" alt="Arroz" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="arroz">ARROZ</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta1">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<img src="./img/sabonete.png" alt="Sabonete" class="imagem-horz">
+								<br><br><button type="button" class="btn btn-default" name="sabonete">SABONETE</button>
+
+								<div class="alert alert-info" style="display: none;" id="alerta2">
+									Parabéns! Você acertou!!!
+								</div>
+
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/feijao.png" alt="Feijão" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="feijao">FEIJÃO</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta3">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/batata.png" alt="Batata" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="batata">BATATA</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta4">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+							
+						</div>		
+					</div>
+
+					<br>
+							
+					<div class="borda">
+						<h3>Grupo 2:</h3>
+
+						<div class="row">
+
+							<div class="col-md-6" id="central">
+								<img src="./img/bicicleta.png" alt="Bicicleta" class="imagem-horz">
+								<br><br><button type="button" class="btn btn-default" name="bicicleta">BICICLETA</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta5">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<img src="./img/carro.png" alt="Carro" style="height: 250px; width: 400px;">
+								<br><br><button type="button" class="btn btn-default" name="carro">CARRO</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta6">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/algodao-doce.jpg" alt="Algodão Doce" class="imagem-vert">
+								<br><br><button type="button" class="btn btn-default" name="algodao">ALGODÃO DOCE</button>
+
+								<div class="alert alert-info" style="display: none;" id="alerta7">
+									Parabéns! Você acertou!!!
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/moto.png" alt="Moto" class="imagem-horz">
+								<br><br><button type="button" class="btn btn-default" name="moto">MOTO</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta8">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<br>
+					
+					<div class="borda">
+						<h3>Grupo 3:</h3>
+
+						<div class="row">
+
+							<div class="col-md-6" id="central">
+								<img src="./img/oculos.png" alt="Óculos" class="imagem-horz">
+								<br><br><button type="button" class="btn btn-default" name="oculos">ÓCULOS</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta9">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<img src="./img/cadeira-de-praia.png" alt="Cadeira de Praia" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="cadeira">CADEIRA DE PRAIA</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta10">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/sombrinha.png" alt="Sombrinha" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="sombrinha">SOMBRINHA</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta11">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/maquina-de-lavar.png" alt="Máquina de Lavar" class="imagem-vert">
+								<br><br><button type="button" class="btn btn-default" name="maquina">MÁQUINA DE LAVAR</button>
+
+								<div class="alert alert-info" style="display: none;" id="alerta12">
+									Parabéns! Você acertou!!!
+								</div>
+							</div>						
+						</div>
+					</div>					
+					
+					<br>
+
+					<div class="borda">
+						<h3>Grupo 4:</h3>
+
+						<div class="row">
+
+							<div class="col-md-6" id="central">
+								<img src="./img/bola.png" alt="Bola" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="bola">BOLA</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta13">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<img src="./img/skate.png" alt="Skate" class="imagem-horz">
+								<br><br><button type="button" class="btn btn-default" name="skate">SKATE</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta14">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/patins.png" alt="Patins" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="patins">PATINS</button>
+
+								<div class="alert alert-danger" style="display: none;" id="alerta15">
+									Resposta errada! Tente outra vez...
+								</div>
+							</div>
+
+							<div class="col-md-6" id="central">
+								<br><img src="./img/chave-de-fenda.png" alt="Chave de Fenda" class="imagem-quad">
+								<br><br><button type="button" class="btn btn-default" name="chave">CHAVE DE FENDA</button>
+
+								<div class="alert alert-info" style="display: none;" id="alerta16">
+									Parabéns! Você acertou!!!
+								</div>
+							</div>							
+							
+						</div>
+					</div>	
+
+					<h2>2. Relacione o nome com a figura geométrica</h2><br>
+
+					<div class="col-md-6">
+
+						
+						<button type="button" class="btn btn-default" name="triangulo"><img src="./img/triangulo.jpg" alt="Triângulo" class="imagem-p"></button><br><br>
+
+						<button type="button" class="btn btn-default" name="quadrado"><img src="./img/quadrado.jpg" alt="Quadrado" class="imagem-p"></button><br><br>
+
+						<button type="button" class="btn btn-default" name="circulo"><img src="./img/circulo.jpg" alt="Círculo" class="imagem-p"></button><br><br>
+
+						<button type="button" class="btn btn-default" name="retangulo"><img src="./img/retangulo.jpg" alt="Retângulo" class="imagem-p"></button><br><br>	
+
+					</div>	
+
+					<div class="col-md-6">
+						<br><br><br><button type="button" class="btn btn-default" name="circuloB">CÍRCULO</button>
+						<br><br><br><br><br><br><br><br><button type="button" class="btn btn-default" name="quadradoB">QUADRADO</button>
+						<br><br><br><br><br><br><br><br><button type="button" class="btn btn-default" name="retanguloB">RETÂNGULO</button>
+						<br><br><br><br><br><br><br><br><button type="button" class="btn btn-default" name="trianguloB">TRIÂNGULO</button>						
+					</div>
+
+				
+				
+			</form>
+			
+
+			<div class="container body-content">
+				<footer class="footer" style="text-align: center;">
+						<h5>Universidade Federal de Ouro Preto - Carla Sanches Nere dos Santos - 15.1.8349 - carlasanches8@gmail.com</h5>
+
+						<a href="https://www.freepik.com/free-vector/sketches-school-elements-pattern_832394.htm">Background Designed by Freepik</a>
+
+						<br><a href="https://pixabay.com/">All images by pixabay</a>
+				</footer>	
+				
+			</div>
+
+				
+			
+
+		</div>
+
+		
+	</body>
+</html>

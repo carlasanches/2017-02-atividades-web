@@ -1,0 +1,3 @@
+## Validação no site https://validator.w3.org
+
+A imagem em anexo nessa atividade é o resultado da validação do formulário contido do exercício 2. Mesmo que para a atividade proposta o resultado obtido seja o mesmo, é possível observar que a validação ajuda a prevenir futuros erros no projeto. Todas as saídas de erro informaram que o atributo for deve-se referir ao id de outro formulário, tal como está na definição da linguagem. 
